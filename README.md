@@ -48,21 +48,21 @@ cat < file1
 
 cat < file2
 ## OUTPUT
-![Alt text](image.png)
+![Alt text](img/image.png)
 
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+ ![Alt text](img/image-1.png)
 comm file1 file2
  ## OUTPUT
 
- 
+ ![Alt text](img/image2.png)
 diff file1 file2
 ## OUTPUT
 
-
+![Alt text](img/image3.png)
 #Filters
 
 ### Create the following files file11, file22 as follows:
@@ -85,18 +85,18 @@ cat > file22
 cut -c1-3 file11
 ## OUTPUT
 
-
+![Alt text](img/image4.png)
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
 
-
+![Alt text](img/image5.png)
 
 cut -d "|" -f 2 file22
 ## OUTPUT
 
-
+![Alt text](img/image6.png)
 cat < newfile 
 ```
 Hello world
@@ -110,40 +110,40 @@ hello world
 grep Hello newfile 
 ## OUTPUT
 
-
+![Alt text](img/image7.png)
 
 grep hello newfile 
 ## OUTPUT
 
-
+![Alt text](img/image8.png)
 
 
 grep -v hello newfile 
 ## OUTPUT
 
-
+![Alt text](img/image9.png)
 
 cat newfile | grep -i "hello"
 ## OUTPUT
 
 
-
+![Alt text](img/image10.png)
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
 
-
+![Alt text](img/image11.png)
 
 
 grep -R ubuntu /etc
 ## OUTPUT
-
+![Alt text](img/image12-1.png)
 
 
 grep -w -n world newfile   
 ## OUTPUT
 
-
+![Alt text](img/image13.png)
 cat < newfile 
 ```
 Hello world
@@ -165,60 +165,50 @@ Linux is best in this World
  ```
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
-
+![Alt text](img/image14.png)
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
 
-
+![Alt text](img/image15.png)
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
 
-
+![Alt text](img/image16.png)
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
 
-
+![Alt text](img/image17.png)
 
 egrep '(world$)' newfile 
 ## OUTPUT
 
-
+![Alt text](img/image18.png)
 
 egrep '(World$)' newfile 
 ## OUTPUT
-
+![Alt text](img/image19.png)
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
-
+![Alt text](img/image20.png)
 
 
 egrep '[1-9]' newfile 
-## OUTPUT
-
-
 
 egrep 'Linux.*world' newfile 
-## OUTPUT
-
 
 egrep 'Linux.*World' newfile 
-## OUTPUT
-
 
 egrep l{2} newfile
-## OUTPUT
-
-
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
-
+![Alt text](img/image21.png)
 
 cat > file23
 ```
