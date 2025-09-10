@@ -42,11 +42,13 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
+![Alt text](img/12.png)
 
 
 
 cat < file2
 ## OUTPUT
+![Alt text](image.png)
 
 
 # Comparing Files
