@@ -226,6 +226,7 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
+
 ![Alt text](img/image22.png)
 
 
@@ -379,11 +380,13 @@ gzip backup.tar
 
 ls .gz
 ## OUTPUT
- 
+ ![Alt text](img/image45.png)
 gunzip backup.tar.gz
 ## OUTPUT
 
- 
+ ![Alt text](img/image46.png)
+
+
 # Shell Script
 ```
 echo '#!/bin/sh' > my-script.sh
@@ -392,7 +395,7 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
-
+![Alt text](img/image47.png)
  
 cat << stop > herecheck.txt
 ```
@@ -404,7 +407,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
-
+![Alt text](img/image48.png)
 
 cat < scriptest.sh 
 ```bash
@@ -422,7 +425,7 @@ ps
 ^d
  ```
 
-cat scriptest.sh 
+cat scriptest.sh                   
 ```bash
 \#!/bin/sh
 echo “File name is $0 ”
@@ -442,25 +445,23 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
-
+![Alt text](img/image49.png)
  
 ls file1
 ## OUTPUT
-
-echo $?
-## OUTPUT 
+![Alt text](img/image50.png)
 ./one
 bash: ./one: Permission denied
- 
 echo $?
 ## OUTPUT 
+![Alt text](img/image51.png)
  
 abcd
  
 echo $?
  ## OUTPUT
 
-
+![Alt text](img/image52.png)
  
 # mis-using string comparisons
 
@@ -490,14 +491,16 @@ else
 echo "$val1 is less than $val2"
 fi
 ```
-##OUTPUT
-
-
-
 chmod 755 strcomp.sh
- 
+
+
 ./strcomp.sh 
 ## OUTPUT
+
+![Alt text](img/image53.png)
+ 
+
+
 
 
 # check file ownership
@@ -525,7 +528,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
-
+![Alt text](img/image54.png)
 # check if with file location
 cat>ifnested.sh 
 ```bash
@@ -572,7 +575,7 @@ fi
 ./ifnested.sh 
 ## OUTPUT
 
-
+![Alt text](img/image55.png)
 
 # using numeric test comparisons
 cat > iftest.sh 
@@ -615,6 +618,7 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
+![Alt text](img/image56.png)
 
 # check if a file
 cat > ifnested.sh 
@@ -665,6 +669,8 @@ $ chmod 755 ifnested.sh
 $ ./ifnested.sh 
 ##OUTPUT
 
+![Alt text](img/image57.png)
+
 # looking for a possible value using elif
 cat elifcheck.sh 
 ```bash
@@ -692,7 +698,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
-
+![Alt text](img/image58.png)
 
 # testing compound comparisons
 cat> ifcompound.sh 
@@ -708,6 +714,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
+![Alt text](img/image59.png)
 
 # using the case command
 cat >casecheck.sh 
@@ -727,10 +734,12 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
- 
+ ##OUTPUT
+ ![Alt text](img/image60.png)
+
 cat > whiletest
 ```bash
-#!/bin/bash
+\#!/bin/bash
 #while command test
 var1=10
 while [ $var1 -gt 0 ]
@@ -745,6 +754,10 @@ $ ./whiletest.sh
  
  
 cat untiltest.sh 
+
+##OUTPUT
+![Alt text](img/image61.png)
+
 ```bash
 \#using the until command
 var1=100
@@ -755,8 +768,11 @@ var1=$[ $var1 - 25 ]
 done
 ``` 
 $ chmod 755 untiltest.sh
- 
- 
+ ./untiltest.sh
+
+ ##OUTPUT
+
+ ![Alt text](img/image62.png)
  
 cat forin1.sh 
 ```bash
