@@ -226,80 +226,81 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
-
+![Alt text](img/image22.png)
 
 
 sed -n -e '$p' file23
 ## OUTPUT
 
-
+![Alt text](img/image23.png)
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
 
-
+![Alt text](img/image24.png)
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
-
+![Alt text](img/image25.png)
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
 
-
+![Alt text](img/image25-1.png)
 
 sed -n -e '1,5p' file23
 ## OUTPUT
 
-
+![Alt text](img/image26.png)
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
 
-
+![Alt text](img/image27.png)
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
 
-
+![Alt text](img/image28.png)
 
 seq 10 
 ## OUTPUT
 
-
+![Alt text](img/image29.png)
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
 
-
+![Alt text](img/image30.png)
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
 
 
-
+![Alt text](img/image31.png)
 seq 3 | sed '2a hello'
 ## OUTPUT
 
-
+![Alt text](img/image32.png)
 
 seq 2 | sed '2i hello'
 ## OUTPUT
 
-
+![Alt text](img/image33.png)
 seq 10 | sed '2,9c hello'
 ## OUTPUT
 
-
+![Alt text](img/mage34.png)
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
 
-
+![Alt text](img/image35.png)
 
 sed -n '2,4{s/$/*/;p}' file23
-
+## OUTPUT
+![Alt text](img/image36.png)
 
 #Sorting File content
 cat > file21
@@ -312,7 +313,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
-
+![Alt text](img/image37.png)
 
 cat > file22
 ```
@@ -326,13 +327,13 @@ cat > file22
 uniq file22
 ## OUTPUT
 
-
+![Alt text](img/image38.png)
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
-
+![Alt text](img/image39.png)
 cat < urllist.txt
 ```
 www. yahoo. com
@@ -349,17 +350,17 @@ www. mrcet.... com
 cat urllist.txt | tr -d ' '
  ## OUTPUT
 
-
+![Alt text](img/image40.png)
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
 
-
+![Alt text](img/image41.png)
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-
+![Alt text](img/image42.png)
 
 mkdir backupdir
  
@@ -369,11 +370,11 @@ cd backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
-
+![Alt text](img/image43.png)
 
 tar -xvf backup.tar
 ## OUTPUT
-
+![Alt text](img/image44.png)
 gzip backup.tar
 
 ls .gz
