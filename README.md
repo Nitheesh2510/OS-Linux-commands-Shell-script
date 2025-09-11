@@ -785,7 +785,9 @@ done
  ```
  
 $ chmod 755 forin1.sh
- 
+ ./forini.sh
+ ##OUTPUT
+ ![Alt text](img/image63.png)
  
 cat forin2.sh 
 ```bash
@@ -811,7 +813,9 @@ done
 $ chmod 755 forin2.sh
  
 $ ./forin2.sh 
- 
+ ##OUTPUT
+ ![Alt text](img/image64.png)
+
 cat forin3.sh 
 ```bash
 \#!/bin/bash
@@ -822,7 +826,9 @@ echo "word:$test"
 done
 ```
 $ ./forin3.sh 
- 
+ ## OUTPUT
+ ![Alt text](img/image65.png)
+
 cat forin1.sh 
 ```bash
 #!/bin/bash
@@ -835,6 +841,8 @@ done
 $ chmod 755 forin1.sh
 
 ## OUTPUT
+![Alt text](img/image66.png)
+
 cat forinfile.sh 
 ```bash
 #!/bin/bash
@@ -846,6 +854,7 @@ echo "Visit beautiful $file“
 done
 ```
 $ chmod 777 forinfile.sh
+./forinfile.sh
 $ cat cities
 Hyderabad
 Alampur
@@ -857,6 +866,7 @@ Khammam
 
 ## OUTPUT
 
+![Alt text](img/image67.png)
 
 cat forctype.sh 
 ```bash
@@ -870,6 +880,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
+![Alt text](img/image68.png)
 
 cat forctype1.sh 
 ```bash
@@ -901,7 +912,7 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
-
+![Alt text](img/image69.png)
  
 cat forbreak.sh 
 ```bash
@@ -917,11 +928,12 @@ echo "Iteration number: $var1"
 done
 echo "The for loop is completed“
 ```
-## OUTPUT
-
 $ chmod 755 forbreak.sh
  
 $ ./forbreak.sh 
+## OUTPUT
+![Alt text](img/image70.png)
+
  
 cat forbreak.sh 
 ```bash
@@ -943,7 +955,8 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
- 
+ ![Alt text](img/image71.png)
+
 cat exread.sh 
 ```bash
 #!/bin/bash
@@ -957,7 +970,7 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
-
+![Alt text](img/image72.png)
 
  cat exread1.sh
 ```bash
@@ -967,12 +980,12 @@ read -p "Enter your name: " name
 echo "Hello $name, welcome to my program. “
 ``` 
 $ chmod 755 exread1.sh 
-
+$ ./exread1.sh 
 ## OUTPUT
 
+![Alt text](img/image73.png)
 
 
-$ ./exread1.sh 
  
 cat funcex.sh
 ```bash
@@ -988,10 +1001,12 @@ echo "The result is $value"
 else
 echo "Usage: badtest1 a b"
 fi
-```
+ ```
+ ./funcex.sh
+ 
 ## OUTPUT
- ./funcex.sh 
 
+![Alt text](img/image74.png)
  
  ./funcex.sh 1 2
 
@@ -1005,9 +1020,10 @@ cat argshift.sh
 done
 ```
 $ chmod 777 argshift.sh
-
-## OUTPUT
 $ ./argshift.sh 1 2 3
+## OUTPUT
+![Alt text](img/image75.png)
+
  
  cat argshift1.sh
 ```bash
@@ -1024,6 +1040,7 @@ done
 ```
 $ chmod 777 argshift.sh
 ## OUTPUT
+![Alt text](img/image76-1.png)
 $ ./argshift.sh 1 2 3
  
 cat argshift.sh
@@ -1036,9 +1053,10 @@ while (( "$#" )); do
 done
 set +x
 ```
-## OUTPUT
  ./argshift.sh 1 2 3
- 
+## OUTPUT
+
+ ![Alt text](img/image77.png)
  
 cat > nc.awk
 ```bash
