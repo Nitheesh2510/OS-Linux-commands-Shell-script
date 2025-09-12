@@ -1087,7 +1087,8 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
- 
+ ![Alt text](img/image78.png)
+
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1115,6 +1116,6 @@ fi
 ```
 ## OUTPUT 
 
-
+![Alt text](img/image79-1.png)
 # RESULT:
 The Commands are executed successfully.
